@@ -1,7 +1,15 @@
+import streamlit as st
+import subprocess
+
+subprocess.run(['apt-get', 'update'])
+subprocess.run(['apt-get', 'install', 'g++', 'openjdk-8-jdk', 'python-dev', 'python3-dev'])
+subprocess.run(['pip3', 'install', 'JPype1-py3'])
+subprocess.run(['pip3', 'install', 'konlpy'])
+subprocess.run(['bash', '-c', 'export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"'])
+
 import numpy as np
 from numpy import dot
 from numpy.linalg import norm
-import streamlit as st
 from konlpy.tag import Okt
 import pickle
 
