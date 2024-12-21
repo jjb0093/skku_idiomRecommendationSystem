@@ -1,5 +1,3 @@
-%%writefile app.py
-
 import subprocess
 import numpy as np
 from numpy import dot
